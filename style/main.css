@@ -7,6 +7,28 @@
     src: url('../assets/Roboto-Regular.ttf');
 }
 
+
+.load {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 0.3s linear;
+  }
+  
+  .load-none {
+    opacity: 0;
+  }
+  
+
+
 * {
     padding: 0;
     margin: 0;

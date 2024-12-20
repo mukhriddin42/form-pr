@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./style/main.css">
-    <title>byTrend</title>
-</head>
-<body>
-    <section class="home-page">
-        <header>
-            <div class="container">
-                <div class="header-nav">
-                    <a href="./index.html" class="header-logo"><span>by</span>trend</a>
-                    <div class="navigation">
-                        <a href="#">Services</a>
-                        <a href="#">About</a>
-                        <a href="#">Contacts</a>
-                        <a href="./register/login.html">Log in</a>
-                        <a href="./register/signup.html">Open an account</a>
-                        <a href="#">En</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="home-page__content">
-            <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>byTrend</title>
+  </head>
+  <body>
+    <div class="load">
+        <img src="./Spin@1x-1.0s-200px-200px.gif" alt="">
+    </div>
+    <section class="home-page">
+      <header>
+        <div class="container">
+          <div class="header-nav">
+            <a href="./index.html" class="header-logo"><span>by</span>trend</a>
+            <div class="navigation">
+              <a href="#">Services</a>
+              <a href="#">About</a>
+              <a href="#">Contacts</a>
+              <a href="./register/login.html">Log in</a>
+              <a href="./register/signup.html">Open an account</a>
+              <a href="#">En</a>
             </div>
+          </div>
         </div>
+      </header>
+      <div class="home-page__content">
+        <div class="container"></div>
+      </div>
     </section>
-</body>
+
+    <script>
+      let load = document.querySelector(".load");
+      window.addEventListener("load", () => {
+        load.classList.remove("load-none");
+      });
+
+      setTimeout(() => {
+        load.classList.add("load-none");
+      }, 1000);
+    </script>
+  </body>
 </html>
