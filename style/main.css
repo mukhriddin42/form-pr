@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Typography';
+    src: url('../assets/Typography\ times.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/Roboto-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.home-page {
+    height: 100vh;
+}
+
+header {
+    background-color: #ffffff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.header-logo {
+    font-family: Roboto;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 22px;
+    color: #000000;
+}
+
+.header-logo span {
+    padding: 6px;
+    margin-right: 3px;
+    background-color: #01BAB3;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.navigation a {
+    font-family: Typography;
+    color: #000000;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    transition: all .6s ease-in-out;
+}
+
+.navigation a:nth-child(1),
+.navigation a:nth-child(2),
+.navigation a:nth-child(3) {
+    border-color: transparent;
+}
+
+.navigation a:nth-child(1):hover,
+.navigation a:nth-child(2):hover,
+.navigation a:nth-child(3):hover {
+    border-color: #000000;
+}
+
+.navigation a:nth-child(4),
+.navigation a:nth-child(5),
+.navigation a:nth-child(6) {
+    border-color: #000000;
+}
+
+.navigation a:nth-child(4):hover,
+.navigation a:nth-child(5):hover,
+.navigation a:nth-child(6):hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.navigation a:nth-child(1):active,
+.navigation a:nth-child(2):active,
+.navigation a:nth-child(3):active {
+    background-color: #01BAB3;
+    color: #ffffff;
+} 
+
+.navigation a:nth-child(4):active,
+.navigation a:nth-child(5):active,
+.navigation a:nth-child(6):active {
+    background-color: #01BAB3;
+    border-style: inset;
+}
+
+
+/* Start of form styling */
+.form-box {
+    border: 1px solid red;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.form-box p {
+    text-align: center;
+}
+
+.form-box .form-title {
+    text-align: center;
+    padding-top: 25px;
+    font-family: Roboto;
+    font-size: 32px;
+}
+
+.form-box .form-subtitle {
+    padding-top: 15px;
+    font-family: Typography;
+}
+
+.form-box .form-subtitle a {
+    font-family: Roboto;
+}
+
+.name-lastname {
+    display: flex;
+    justify-content: space-between;
+}
+
+form label {
+    display: inline-block;
+    font-family: Roboto;
+    padding: 10px 0;
+}
