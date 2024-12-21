@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <link rel="stylesheet" href="../style/main.css">
-    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <title>Signup</title>
 </head>
 <body>
     <section class="home-page">
@@ -18,8 +18,8 @@
                         <a href="#">Services</a>
                         <a href="#">About</a>
                         <a href="#">Contacts</a>
-                        <a href="#">Log in</a>
-                        <a href="#">Open an account</a>
+                        <a href="../register/login.html">Log in</a>
+                        <a href="../register/signup.html">Open an account</a>
                         <a href="#">En</a>
                     </div>
                 </div>
@@ -27,11 +27,27 @@
         </header>
         <div class="home-page__content">
             <div class="container">
-                <form class="form-box" action="">
+                <div class="form-box" action="">
+                    <p>
+                        <a href="../index.html" class="header-logo"><span>by</span>trend</a>
+                    </p>
+                    <h1 class="form-title">Welcom to ByTrend!</h1>
+                    <p class="form-subtitle">Do you still not have an account ? <a href="../register/signup.html">Sign up</a></p>
+                    <form action="#">
+                        <label for="">Email<span>*</span></label>
+                        <input class="input-email" type="text" placeholder="Email address" autofocus>
 
-                </form>
+                        <label for="">Password<span>*</span></label>
+                        <input type="password" placeholder="Enter your password">
+
+                        <a href="#" class="form-btn">Log in</a>
+                    </form>
+                    
+                </div>
             </div>
         </div>
     </section>
+
+sc
 </body>
 </html>

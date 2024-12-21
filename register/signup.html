@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <link rel="stylesheet" href="../style/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <title>Signup</title>
 </head>
 <body>
@@ -18,8 +18,8 @@
                         <a href="#">Services</a>
                         <a href="#">About</a>
                         <a href="#">Contacts</a>
-                        <a href="#">Log in</a>
-                        <a href="#">Open an account</a>
+                        <a href="../register/login.html">Log in</a>
+                        <a href="../register/signup.html">Open an account</a>
                         <a href="#">En</a>
                     </div>
                 </div>
@@ -36,25 +36,25 @@
                     <form action="#">
                         <div class="name-lastname">
                             <div class="name-box">
-                                <label for="name">First name<span>*</span></label>
-                                <input type="text" name="name" id="" placeholder="Your name">
+                                <label for="name" >First name<span>*</span></label>
+                                <input type="text" name="name" id="" placeholder="Your name" autofocus required>
                            </div>
                            <div class="surname-box">
                                 <label for="surname">Last name<span>*</span></label>
-                                <input type="text" name="name" id="" placeholder="Your surname">
+                                <input type="text" name="name" id="" placeholder="Your surname" required>
                            </div>
                         </div>
                         <label for="date">Birth date<span>*</span></label>
-                        <input type="date" name="date" id="date">
+                        <input type="date" name="date" id="date" required>
 
                         <label for="gender">Gender<span>*</span></label>
                         <div class="radio-container">
                             <div class="radio-box">
-                                <input type="radio" name="gender" id="">
+                                <input type="radio" name="gender" id="" required>
                                 <p>Male</p>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" name="gender" id="">
+                                <input type="radio" name="gender" id="" required>
                                 <p>Female</p>
                             </div>
                         </div>
@@ -71,5 +71,7 @@
             </div>
         </div>
     </section>
+
+
 </body>
 </html>

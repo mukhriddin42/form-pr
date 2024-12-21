@@ -25,11 +25,9 @@
   
   .load-none {
     opacity: 0;
+    visibility: hidden; /* Yoki display: none */
   }
   
-@keyframes loader {
-    
-}
 
 
 * {
@@ -139,13 +137,14 @@ header {
 }
 
 
+
 /* Start of form styling */
 .form-box {
-    border: 1px solid red;
     width: 500px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
 .form-box p {
@@ -154,13 +153,13 @@ header {
 
 .form-box .form-title {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 20px;
     font-family: Roboto;
     font-size: 32px;
 }
 
 .form-box .form-subtitle {
-    padding-top: 15px;
+    padding-top: 10px;
     font-family: Typography;
 }
 
@@ -173,8 +172,144 @@ header {
     justify-content: space-between;
 }
 
+form {
+    margin-top: 20px;
+}
 form label {
     display: inline-block;
     font-family: Roboto;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #333333;
     padding: 10px 0;
+}
+
+form label span {
+    color: #01BAB3;
+}
+
+form input::placeholder {
+    font-family: Typography;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+form input {
+    width: 430px;
+    height: 40px;
+    border: 2px solid #D9D9D9;
+    outline-color:#01BAB3;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 10px;
+    font-family: Roboto;
+    color: #333333;
+    cursor: pointer;
+}
+
+form select {
+    width: 200px;
+    height: 40px;
+    border: 2px solid #D9D9D9;
+    outline-color:#01BAB3;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 10px;
+    font-family: Roboto;
+    color: #333333;
+    cursor: pointer;
+}
+
+form input:hover {
+    background-color: #f1f1f1;
+}
+
+form input[type="date"] {
+    font-family: Typography;
+    font-size: 14px;
+    color: #333333;
+}
+
+form input:nth-child(1),
+form input:nth-child(2) {
+    width: 95%;
+}
+
+form .input-email {
+    display: inline-block;
+    width: 430px  !important; 
+}
+
+
+.radio-container {
+    display: flex;
+
+}
+
+.radio-box {
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    width: 210px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+
+.radio-box:hover {
+    background-color: #f1f1f1;
+}
+
+.radio-box:active {
+    border-color: #01BAB3;
+}
+
+.radio-box:nth-child(1) {
+    margin-right: 10px;
+}
+
+.radio-box input[type = "radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.radio-box p {
+    font-family: Roboto;
+    color: #333333;
+}
+
+
+.radio-box input[type="radio"]:checked  {
+    color: red; /* p tagidagi matn qizil bo'ladi */
+}
+
+
+.form-btn {
+    display: inline-block;
+    width: 430px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #01BAB3;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all .6s;
+}
+
+.form-btn i {
+    transform: rotate(180deg);
+    margin-left: 10px;
+}
+
+.form-btn:hover {
+    background-color: #019792;
 }

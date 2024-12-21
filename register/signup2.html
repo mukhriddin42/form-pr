@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <title>Signup 2</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <title>Signup</title>
 </head>
 <body>
     <section class="home-page">
@@ -17,8 +18,8 @@
                         <a href="#">Services</a>
                         <a href="#">About</a>
                         <a href="#">Contacts</a>
-                        <a href="#">Log in</a>
-                        <a href="#">Open an account</a>
+                        <a href="../register/login.html">Log in</a>
+                        <a href="../register/signup.html">Open an account</a>
                         <a href="#">En</a>
                     </div>
                 </div>
@@ -26,11 +27,50 @@
         </header>
         <div class="home-page__content">
             <div class="container">
-                <form class="form-box" action="">
+                <div class="form-box" action="">
+                    <p>
+                        <a href="../index.html" class="header-logo"><span>by</span>trend</a>
+                    </p>
+                    <h1 class="form-title">Welcom to ByTrend!</h1>
+                    <p class="form-subtitle">Already have account? <a href="../register/login.html">Log in</a></p>
+                    <form action="#">
+                        <label for="">Email<span>*</span></label>
+                        <input class="input-email" type="text" placeholder="Email address" autofocus>
 
-                </form>
+                        <label for="">Phone<span>*</span></label>
+                        <input type="text" placeholder="+998 94 000 00 00">
+
+                        <div class="name-lastname">
+                            <div class="name-box">
+                                <label for="name" >Country<span>*</span></label>
+                                <select name="" id="">
+                                    <option value="russia">Russia</option>
+                                    <option value="uzb">Uzbekistan</option>
+                                    <option value="china">China</option>
+                                    <option value="russia">russia</option>
+                                </select>
+                           </div>
+                           <div class="surname-box">
+                                <label for="surname">City<span>*</span></label>
+                                <input type="text" name="name" id="" placeholder="Name of the city" required>
+                           </div>
+                        </div>
+
+                        
+                        <label for="">Password<span>*</span></label>
+                        <input type="password" placeholder="Uppercase and lowercase Latin letters">
+
+                        <label for="">Confirm password<span>*</span></label>
+                        <input type="password" placeholder="Confirm password">
+
+                        <a href="#" class="form-btn">Register</a>
+                    </form>
+                    
+                </div>
             </div>
         </div>
     </section>
+
+sc
 </body>
 </html>
